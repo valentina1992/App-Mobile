@@ -1,0 +1,27 @@
+<main class="row">
+
+<div class="container">
+
+		{{#each [0]}} {{#if name}}
+		<div class="card col s12">
+			<div id="dettaglioProdotto" class="card-image">
+					{{#if img}}
+					<img id="imgslide" src="{{img}}" data-prod="{{id}}">{{/if}}
+			</div>
+			<div id="card-border" class="col s12" data-prod="{{id}}" imgSrc="{{img}}">
+					<div class="card-content col s6">
+							<p class="productTitle" style="color: black;">{{name}}
+									<br> €{{price}}
+							</p>
+					</div>
+					<div class="card-action col s6 ">
+						<a id="bottone-ca" class="waves-effect waves-light btn light-green darken-3"><i class="material-icons" style="color: black;">shopping_cart</i></a>
+					</div>
+			</div>
+		</div>
+
+		{{/if}} {{/each}}
+</div>
+
+
+</main>

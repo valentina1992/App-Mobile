@@ -1,0 +1,36 @@
+
+<h2><center>Carrello</center></h2>
+<div id="contenitore">
+  {{#each this}}
+  <li id="single-prod col s6" class="collection-item avatar">
+    <img src="{{img}}" alt="" class="circle" style="width:100px;">
+    <span class="title"><strong>{{name}}</strong></span>
+
+
+    <div id="li-grid" class="row">
+      <div class="productTitle">
+        <center><p>Quantity:  <strong>{{quantity}}</strong></center>
+        </p>
+      </div>
+
+      <!-- <div id="liclose-icn" class="col s6">
+        <span><i  id="deletefromcart" prodName="{{name}}" class="material-icons">close</i></span>
+      </div> -->
+
+      <div class="col s12">
+        <span class="title right">€{{total}}</span>
+      </div>
+    </div>
+
+  </li>
+  <hr>
+  {{/each}}
+  </div>
+  <div class="col s12">
+    <a id="svuota"class="waves-effect waves-light btn btn1">Svuota</a>
+    <a id="cartleft-btn" class="waves-effect waves-light btn" style="margin-left:75px; margin-right:25px;">Compra</a>
+
+	</div>
+	<!-- <div  class="col s12">
+	  <a id="cartleft-btn" class="waves-effect waves-light btn">Compra</a>
+	</div> -->
